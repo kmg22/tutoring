@@ -11,7 +11,7 @@ public class Q2442 {
             for(int k=0;k<(2*N-1);k++) {
                 if (k < O / 2 || k >= (2*i-1)+O/2) {
                     if(k<O/2) // 앞 공백을 출력하는 경우
-                      System.out.print(' ');
+                        System.out.print(' ');
                 }
                 else
                 System.out.print('*');
