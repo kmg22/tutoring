@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q2442 {
+public class Baek_2442 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
@@ -14,7 +14,7 @@ public class Q2442 {
                         System.out.print(' ');
                 }
                 else
-                System.out.print('*');
+                    System.out.print('*');
             }
             System.out.println();
         }
