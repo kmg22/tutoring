@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class Baek_2635 {
     void numsOfRule(int current, int next){
-        System.out.print(current + " ");
         while(current>=next) {
+            System.out.print(current + " ");
             int tmp = next;
             next = current - next;
             current = tmp;
-            System.out.print(current + " ");
+        }
+        System.out.print(current + " ");
+        if(current < next){
+            System.out.print(next + " ");
         }
     }
 
@@ -42,7 +45,7 @@ public class Baek_2635 {
 
         // 5 5 0
         // 5 4 1
-        // 5 3 2 1
+        // 5 3 2 1 1 0 1
         // 5 2 3
         // 5 1 4
 
@@ -77,7 +80,7 @@ public class Baek_2635 {
         }
         */
         //else {
-            for (int i = (num / 2); i <= num; i++) {
+            for (int i = 1; i <= num; i++) {
                 int current = num;// 현재 단계에 있는 수
                 int next = i;
                 int cnt = 2; // 현재 단계
@@ -99,5 +102,4 @@ public class Baek_2635 {
         Baek_2635 x = new Baek_2635();
         x.numsOfRule(num, secondNum);
         }
-
 }
